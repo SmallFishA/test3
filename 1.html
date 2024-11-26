@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>论坛</title>
+    <link rel="stylesheet" type="text/css" href="./css/1.css">
+</head>
+<body>
+    <div class="button1">
+        <button class="button1" id="showButton"><p class="p">我要发贴</p></button>
+    </div>
+    <div class="box1" id="box">
+
+        <input class="textbox1" placeholder="请输入标题（1-50字符）" id="title">
+
+        <p class="box2">
+            所属板块:
+            <select id="section" class="xz">
+                <option value="卢本伟广场" selected>卢本伟广场</option>
+                <option value="沈阳大街">沈阳大街</option>
+                <option value="东北往事">东北往事</option>
+            </select>
+        </p>
+
+            <textarea class="textbox2" id="content" placeholder="输入帖子内容"></textarea>
+
+            <button type="submit" class="button1 p box2" onclick="postNewPost()" id="ShowButton">发布</button>
+    </div>
+    
+    <div class="box3" id="Box">
+    <ul id="postList"></ul>
+</div>
+    <script src="./js/1.js"></script>
+</body>
+</html>
